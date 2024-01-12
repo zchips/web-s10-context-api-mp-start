@@ -14,7 +14,7 @@
 
 ## ✨ Instructions
 
-Welcome to your Module Project! In this module you learned to use the Context API to hold data and state, so they can be "teleported" to any component in the React tree, no matter how deeply nested, without any prop drilling. In this project you will refactor an application that holds its global state at the top-level component. Your mission is to remove global state from that component and place it in context.
+Welcome to your Module Project! In this module you learned to use the Context API to hold data and state, so they can be "teleported" to any component in the React tree, no matter how deeply nested, without any prop drilling. In this project you will refactor an application that holds its global state at the top-level component. Your mission is to remove global state from that component and place it in context, for ready access from any component in the tree.
 
 ### 🥷 Tasks
 
@@ -31,7 +31,7 @@ Welcome to your Module Project! In this module you learned to use the Context AP
 
 #### 👉 TASK 1 - Study the UI and the code
 
-Get a feel for how the app works in Chrome, and study the components that comprise this React app.
+Get a feel for how the app works in **Chrome**, and study the **components** that comprise this React app.
 
 #### 👉 TASK 2 - Create a context and wrap the React tree
 
@@ -43,13 +43,13 @@ Get a feel for how the app works in Chrome, and study the components that compri
 
 #### 👉 TASK 3 - Move app state over to context
 
-The [App.js](./frontend/components/App.js) component is acting as the holder of application state. The slices of state and the state-changing functions are then passed to its child components using props.
+The [App.js](./frontend/components/App.js) component is acting as the holder of application state. The slices of state and the state-changing functions are then passed to App's child components using props.
 
 1. Copy all the state and callbacks from App over to your context provider.
 
-2. From inside [Quotes.js](./frontend/components/Quotes.js) and [QuoteForm.js](./frontend/components/QuoteForm.js), consume the slices of state and callbacks they need to function from context, instead of using the ones arriving from props.
+2. From inside [Quotes.js](./frontend/components/Quotes.js) and [QuoteForm.js](./frontend/components/QuoteForm.js), consume whatever quotes data and callbacks they need to function from context, instead of using the ones arriving from props. You can allow QuoteForm to manage its own internal state, since the rest of the app is not interested in the values held inside the form.
 
-3. Clean up the [App.js](./frontend/components/App.js) by removing all state from it, and removing from the JSX all the props it was passing to its children in the old architecture.
+3. Clean up the [App.js](./frontend/components/App.js) by removing all state from it if you haven't already, and removing from the JSX all the props it was passing to its children in the old architecture.
 
 #### 👉 TASK 4 - Watch the Solution Video
 
