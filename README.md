@@ -14,7 +14,9 @@
 
 ## ✨ Instructions
 
-Welcome to your Module Project! In this module you learned to use the Context API to hold data and state, so they can be "teleported" to any component in the React tree, no matter how deeply nested, without any prop drilling. In this project you will refactor an application that holds its global state at the top-level component. Your mission is to remove global state from that component and place it in context, for ready access from any component in the tree.
+Welcome to your Module Project! In this module you learned to use the Context API to hold data and state, so they can be "teleported" to any component in the React tree, no matter how deeply nested, without any prop drilling.
+
+In this project you will refactor an application that holds its global state at the top-level component. Your mission is to remove global state from that component and place it in context, for ready access from any component in the tree.
 
 ### 🥷 Tasks
 
