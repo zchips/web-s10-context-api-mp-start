@@ -35,7 +35,7 @@ Get a feel for how the app works in **Chrome**, and study the **components** tha
 
 #### 👉 TASK 2 - Create a context and wrap the React tree
 
-1. Inside [quotesContext.js](./frontend/context/quotesContext.js) **create a context** and a **context provider** with some dummy data as the `value` prop, and export them out.
+1. Inside [quotesContext.js](./frontend/context/quotesContext.js) **create a context**, and a **context provider** with some dummy data as the `value` prop, and export them out.
 
 2. Inside [index.js](./frontend/index.js) **wrap** the React tree with your context provider.
 
