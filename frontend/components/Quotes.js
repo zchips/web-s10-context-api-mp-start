@@ -1,5 +1,4 @@
 import React from 'react'
-import { QuotesContext } from '../context/quotesContext'
 
 export default function Quotes(props) {
   const {
