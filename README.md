@@ -43,13 +43,13 @@ Get a feel for how the app works in Chrome, and study the components that compri
 
 #### 👉 TASK 3 - Move app state over to context
 
-The [App.js](./frontend/components/App.js) component is acting as the holder of application state. The slices of state and the state-changing functions are then passed to its child components.
+The [App.js](./frontend/components/App.js) component is acting as the holder of application state. The slices of state and the state-changing functions are then passed to its child components using props.
 
 1. Copy all the state and callbacks from App over to your context provider.
 
-2. From inside [Quotes.js](./frontend/components/Quotes.js) and [QuoteForm.js](./frontend/components/QuoteForm.js), consume the slices of state and callbacks they need to function from context, instead props.
+2. From inside [Quotes.js](./frontend/components/Quotes.js) and [QuoteForm.js](./frontend/components/QuoteForm.js), consume the slices of state and callbacks they need to function from context, instead of using the ones arriving from props.
 
-3. Clean up the [App.js](./frontend/components/App.js) by removing all the state from it, and removing all the props it was passing to its child components in the old architecture.
+3. Clean up the [App.js](./frontend/components/App.js) by removing all state from it, and removing from the JSX all the props it was passing to its children in the old architecture.
 
 #### 👉 TASK 4 - Watch the Solution Video
 
