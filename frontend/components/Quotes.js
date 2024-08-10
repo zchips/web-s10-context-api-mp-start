@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { QuotesContext } from '../context/quotesContext'
 
 export default function Quotes(props) {
+  const data = useContext(QuotesContext)
   const {
     quotes,
     highlightedQuote,
