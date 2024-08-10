@@ -23,8 +23,7 @@ const reducer = (state, action) => {
 }
 
 export default function TodoForm(props) {
-  const data = useContext(QuotesContext)
-  const { createQuote } = props
+  const { createQuote } = useContext(QuotesContext)
   const [state, dispatch] = useReducer(reducer, initialState)
   const onChange = ({ target: { name, value } }) => {
     dispatch({ type: CHANGE_INPUT, payload: { name, value } })

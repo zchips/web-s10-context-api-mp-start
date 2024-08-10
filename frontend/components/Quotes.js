@@ -2,7 +2,6 @@ import React, {useContext} from 'react'
 import { QuotesContext } from '../context/quotesContext'
 
 export default function Quotes(props) {
-  const data = useContext(QuotesContext)
   const {
     quotes,
     highlightedQuote,
@@ -11,7 +10,7 @@ export default function Quotes(props) {
     editQuoteAuthenticity,
     setHighlightedQuote,
     toggleVisibility,
-  } = props
+  } = useContext(QuotesContext)
   return (
     <div id="quotes">
       <h3>Quotes</h3>
